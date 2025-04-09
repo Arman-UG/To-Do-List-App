@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: white;
+    color: black;
+}
+
+#taskInput, #taskCategory {
+    padding: 8px;
+    width: 200px;
+}
+
+#addTask, #toggleTheme {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px;
+    margin-top: 5px;
+    background: #f4f4f4;
+    cursor: grab;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li[draggable="true"] {
+    border: 1px solid #ccc;
+}
+
+button.edit-btn, button.delete-btn {
+    margin-left: 10px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button.edit-btn {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+button.delete-btn {
+    background-color: #d9534f;
+    color: white;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode li {
+    background: #555;
+}
